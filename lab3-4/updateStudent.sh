@@ -9,7 +9,7 @@ then
     exit
 fi
 
-echo "Updating prefix to " $PREFIX
+echo "Updating prefix to " $$PREFIX
 
 contains() {
     string="$1"
@@ -25,9 +25,9 @@ do
     else
         echo "Modify $f"
 	if [[ $OSTYPE == 'darwin'* ]]; then
-     	   sed -i ''  "s/$originPrefix/$PREFIX/g" $f
+     	   sed -i ''  "s/$originPrefix/$$PREFIX/g" $f
 	else
-           sed -i "s/$originPrefix/$PREFIX/g" $f
+           sed -i "s/$originPrefix/$$PREFIX/g" $f
 	fi
     fi
 done
