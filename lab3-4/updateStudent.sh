@@ -9,7 +9,7 @@ then
     exit
 fi
 
-echo "Updating prefix to " $$PREFIX
+echo "Updating prefix to " $PREFIX
 
 contains() {
     string="$1"
