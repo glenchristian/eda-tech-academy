@@ -11,7 +11,7 @@ spec:
   project: finn10
   source:
     path: lab3-4/services/kconnect
-    repoURL: https://github.com//eda-tech-academy.git
+    repoURL: https://github.com/glenchristian/eda-tech-academy.git
   syncPolicy:
     automated:
       prune: true
