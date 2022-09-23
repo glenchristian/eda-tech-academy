@@ -34,7 +34,7 @@ def-argocd-project:
 	@oc apply -f argocd/argo-project.yaml
 
 prepare-argocd: 
-	@echo $$PREFIX $$GIT_ACCOUNT 
+	@echo $$PREFIX $GIT_ACCOUNT 
 	@cd argocd && ./updateStudent.sh && cd ..
 
 gitops: def-argocd-project
