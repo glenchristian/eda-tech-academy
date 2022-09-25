@@ -4,8 +4,8 @@
 originPrefix="ahsoka20"
 originGitAccount=jbcodeforce
 
-echo "Updating prefix to" $PREFIX
-echo "Updating prefix to" $GIT_ACCOUNT
+echo "Updating prefix to " $PREFIX
+echo "Updating prefix to " $GIT_ACCOUNT
 
 contains() {
     string="$1"
